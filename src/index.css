@@ -1190,3 +1190,189 @@ body {
   font-size: 0.82rem;
   margin-top: 3rem;
 }
+
+/* ====================================================
+   MOBILE & RESPONSIVE DESIGN ENHANCEMENTS
+   ==================================================== */
+
+@media (max-width: 900px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .sidebar-column {
+    order: 2;
+  }
+  
+  .matrix-column {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .nav-brand {
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.72rem;
+  }
+
+  .nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .action-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .tender-meta-card {
+    padding: 1rem;
+  }
+
+  .meta-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+
+  .hero-upload-card {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero-btn-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btn-row .btn-primary,
+  .hero-btn-row .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-panel {
+    padding: 1rem;
+  }
+
+  /* Table on mobile: smooth touch horizontal scrolling with minimum comfortable width */
+  .table-responsive {
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+    position: relative;
+  }
+
+  .checklist-table {
+    min-width: 680px;
+  }
+
+  .checklist-table th,
+  .checklist-table td {
+    padding: 0.75rem 0.65rem;
+  }
+
+  .file-select,
+  .date-input {
+    font-size: 16px; /* Prevents auto-zoom on mobile Safari */
+    padding: 8px 10px;
+  }
+
+  .btn-unmatch {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+  }
+
+  .btn-generate,
+  .btn-download-glow {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .ai-key-box {
+    flex-direction: column;
+  }
+
+  .btn-ai-run {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .lang-switcher {
+    grid-column: span 2;
+    justify-content: center;
+  }
+
+  .lang-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .meta-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .meta-header-actions {
+    width: 100%;
+  }
+
+  .meta-header-actions .btn-icon-subtle {
+    width: 100%;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: var(--radius-sm);
+  }
+
+  .hero-upload-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-icon-ring {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+  }
+}
+
