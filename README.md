@@ -4,7 +4,7 @@
 - **Candidate:** 241-15-178
 - **Name:** Rifat Hossan
 - **Public Repository:** https://github.com/rifathossanafk/devfest-241-15-178
-- **Live Demo:** [Vercel Deployment Link] (To be added after deployment)
+- **Live Demo:** https://devfest-241-15-178.vercel.app/
 
 ## How to Run the App
 1. Clone the repository: `git clone https://github.com/rifathossanafk/devfest-241-15-178.git`
